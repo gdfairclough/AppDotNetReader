@@ -18,8 +18,11 @@
 #define kCellMinHeight 100
 #define kLabelLineHeight 21
 #define kCharactersPerLine 35
+#define REFRESH_INTERVAL 10
 
 @interface ADNPostTableViewController()
+
+@property (nonatomic,strong) NSDate *lastUpdate;
 
 @end
 
@@ -38,6 +41,7 @@ void (^refreshData)(void);
     refreshData = ^{
         [self.postsTableView reloadData];
         [self.spinner stopAnimating];
+        self.lastUpdate = [NSDate date];
     };
     
     //only need to display this spinner on loading the table at first, since top indicator will appear at other times
@@ -45,6 +49,8 @@ void (^refreshData)(void);
     [[ADNHTTPClient sharedClient] retrievePostArray:self completion:refreshData];
     
     [self.postsTableView reloadData];
+    
+    
     
     //set up for dynamic cell height
     self.postsTableView.rowHeight = UITableViewAutomaticDimension;
@@ -84,11 +90,23 @@ void (^refreshData)(void);
 
 - (IBAction)refresh:(UIRefreshControl *)sender {
     
-    [[ADNHTTPClient sharedClient] retrievePostArray:self completion:^{
-        [self.postsTableView reloadData];
-        [sender endRefreshing];
+    NSDate *currentDate = [NSDate date];
+    NSDate *dateToUpdate = [self.lastUpdate dateByAddingTimeInterval:REFRESH_INTERVAL];
+   
+    if ([currentDate timeIntervalSinceReferenceDate] >=  [dateToUpdate timeIntervalSinceReferenceDate]) {
+     
+    
+        [[ADNHTTPClient sharedClient] retrievePostArray:self completion:^{
+            [self.postsTableView reloadData];
+            self.lastUpdate = [NSDate date];
+            [sender endRefreshing];
         
-    }];
+        }];
+        NSLog(@"updating..");
+    }else{
+        NSLog(@"not ready to update");
+        [sender endRefreshing];
+    }
 }
 
 
