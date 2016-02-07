@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="100" id="P0j-Q7-tlD" customClass="ADNPostTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P0j-Q7-tlD" id="z5r-Gh-GE2">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-Hz-hbg">
+                        <rect key="frame" x="8" y="12" width="330" height="76"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ovH-6N-IHJ">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Nar-7g-VcF"/>
+                                    <constraint firstAttribute="width" constant="55" id="vWt-tg-mvy"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dJq-RC-831">
+                                <rect key="frame" x="63" y="0.0" width="267" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Name&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-RF-WaO">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Post Text&gt;" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gca-Hy-Kd7">
+                                        <rect key="frame" x="0.0" y="26" width="267" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Fkb-Hz-hbg" secondAttribute="trailing" constant="8" id="EoL-r8-peN"/>
+                    <constraint firstItem="Fkb-Hz-hbg" firstAttribute="leading" secondItem="z5r-Gh-GE2" secondAttribute="leading" constant="8" id="OzT-75-1pq"/>
+                    <constraint firstItem="Fkb-Hz-hbg" firstAttribute="top" secondItem="z5r-Gh-GE2" secondAttribute="top" constant="12" id="Y0w-ib-tv8"/>
+                    <constraint firstAttribute="bottom" secondItem="Fkb-Hz-hbg" secondAttribute="bottom" constant="12" id="lSt-wD-w1K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatar" destination="ovH-6N-IHJ" id="iGe-4s-FU1"/>
+                <outlet property="postText" destination="gca-Hy-Kd7" id="mB5-OB-8t9"/>
+                <outlet property="username" destination="P5Y-RF-WaO" id="OlA-5e-D7T"/>
+            </connections>
+            <point key="canvasLocation" x="369" y="364"/>
+        </tableViewCell>
+    </objects>
+</document>

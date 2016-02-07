@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		C820B7781C66C7E3001AB98C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7771C66C7E3001AB98C /* main.m */; };
 		C820B77B1C66C7E3001AB98C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B77A1C66C7E3001AB98C /* AppDelegate.m */; };
-		C820B77E1C66C7E3001AB98C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B77D1C66C7E3001AB98C /* MasterViewController.m */; };
-		C820B7811C66C7E3001AB98C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7801C66C7E3001AB98C /* DetailViewController.m */; };
 		C820B7841C66C7E3001AB98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C820B7821C66C7E3001AB98C /* Main.storyboard */; };
 		C820B7861C66C7E3001AB98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C820B7851C66C7E3001AB98C /* Assets.xcassets */; };
 		C820B7891C66C7E3001AB98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C820B7871C66C7E3001AB98C /* LaunchScreen.storyboard */; };
 		C820B7941C66C7E3001AB98C /* AppDotNetReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7931C66C7E3001AB98C /* AppDotNetReaderTests.m */; };
 		C820B79F1C66C7E3001AB98C /* AppDotNetReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B79E1C66C7E3001AB98C /* AppDotNetReaderUITests.m */; };
+		C820B7AD1C66C889001AB98C /* ADNPostTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7AC1C66C889001AB98C /* ADNPostTableViewController.m */; };
+		C820B7B11C66C983001AB98C /* ADNHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7B01C66C983001AB98C /* ADNHTTPClient.m */; };
+		C820B7B41C66C9C0001AB98C /* ADNPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7B31C66C9C0001AB98C /* ADNPostTableViewCell.m */; };
+		C820B7B81C66C9EC001AB98C /* ADNPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C820B7B71C66C9EC001AB98C /* ADNPostTableViewCell.xib */; };
+		C820B7BB1C66D723001AB98C /* ADNPostsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7BA1C66D723001AB98C /* ADNPostsStore.m */; };
+		C820B7BE1C66DE61001AB98C /* ADNPost.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7BD1C66DE61001AB98C /* ADNPost.m */; };
+		C820B7C51C67CF9D001AB98C /* ADNColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7C41C67CF9D001AB98C /* ADNColors.m */; };
+		C820B7C71C67F258001AB98C /* ADNPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C820B7C61C67F258001AB98C /* ADNPostViewController.m */; };
+		CD185449043F6D116240C0A4 /* libPods-AppDotNetReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8151D4411C74DB5A3C517C19 /* libPods-AppDotNetReader.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E89FB6AA22DACD6FCFCEBE4 /* Pods-AppDotNetReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDotNetReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppDotNetReader/Pods-AppDotNetReader.debug.xcconfig"; sourceTree = "<group>"; };
+		8151D4411C74DB5A3C517C19 /* libPods-AppDotNetReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDotNetReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C820B7731C66C7E3001AB98C /* AppDotNetReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDotNetReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C820B7771C66C7E3001AB98C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C820B7791C66C7E3001AB98C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C820B77A1C66C7E3001AB98C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C820B77C1C66C7E3001AB98C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		C820B77D1C66C7E3001AB98C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		C820B77F1C66C7E3001AB98C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C820B7801C66C7E3001AB98C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C820B7831C66C7E3001AB98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C820B7851C66C7E3001AB98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C820B7881C66C7E3001AB98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +59,22 @@
 		C820B79A1C66C7E3001AB98C /* AppDotNetReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppDotNetReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C820B79E1C66C7E3001AB98C /* AppDotNetReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDotNetReaderUITests.m; sourceTree = "<group>"; };
 		C820B7A01C66C7E3001AB98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C820B7AC1C66C889001AB98C /* ADNPostTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNPostTableViewController.m; sourceTree = "<group>"; };
+		C820B7AE1C66C8A0001AB98C /* ADNPostTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNPostTableViewController.h; sourceTree = "<group>"; };
+		C820B7AF1C66C978001AB98C /* ADNHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNHTTPClient.h; sourceTree = "<group>"; };
+		C820B7B01C66C983001AB98C /* ADNHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNHTTPClient.m; sourceTree = "<group>"; };
+		C820B7B21C66C9A3001AB98C /* ADNPostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNPostTableViewCell.h; sourceTree = "<group>"; };
+		C820B7B31C66C9C0001AB98C /* ADNPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNPostTableViewCell.m; sourceTree = "<group>"; };
+		C820B7B71C66C9EC001AB98C /* ADNPostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADNPostTableViewCell.xib; sourceTree = "<group>"; };
+		C820B7B91C66D717001AB98C /* ADNPostsStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNPostsStore.h; sourceTree = "<group>"; };
+		C820B7BA1C66D723001AB98C /* ADNPostsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNPostsStore.m; sourceTree = "<group>"; };
+		C820B7BD1C66DE61001AB98C /* ADNPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNPost.m; sourceTree = "<group>"; };
+		C820B7BF1C66DE68001AB98C /* ADNPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNPost.h; sourceTree = "<group>"; };
+		C820B7C31C67CF96001AB98C /* ADNColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNColors.h; sourceTree = "<group>"; };
+		C820B7C41C67CF9D001AB98C /* ADNColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNColors.m; sourceTree = "<group>"; };
+		C820B7C61C67F258001AB98C /* ADNPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNPostViewController.m; sourceTree = "<group>"; };
+		C820B7C81C67F266001AB98C /* ADNPostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADNPostViewController.h; sourceTree = "<group>"; };
+		EDC80F6343674DBA25F6D722 /* Pods-AppDotNetReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDotNetReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppDotNetReader/Pods-AppDotNetReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD185449043F6D116240C0A4 /* libPods-AppDotNetReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14912A86F675E1564C9FE357 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E89FB6AA22DACD6FCFCEBE4 /* Pods-AppDotNetReader.debug.xcconfig */,
+				EDC80F6343674DBA25F6D722 /* Pods-AppDotNetReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		15729BBB6169B183140B1B44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8151D4411C74DB5A3C517C19 /* libPods-AppDotNetReader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C820B76A1C66C7E3001AB98C = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,8 @@
 				C820B7921C66C7E3001AB98C /* AppDotNetReaderTests */,
 				C820B79D1C66C7E3001AB98C /* AppDotNetReaderUITests */,
 				C820B7741C66C7E3001AB98C /* Products */,
+				14912A86F675E1564C9FE357 /* Pods */,
+				15729BBB6169B183140B1B44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,10 +147,13 @@
 			children = (
 				C820B7791C66C7E3001AB98C /* AppDelegate.h */,
 				C820B77A1C66C7E3001AB98C /* AppDelegate.m */,
-				C820B77C1C66C7E3001AB98C /* MasterViewController.h */,
-				C820B77D1C66C7E3001AB98C /* MasterViewController.m */,
-				C820B77F1C66C7E3001AB98C /* DetailViewController.h */,
-				C820B7801C66C7E3001AB98C /* DetailViewController.m */,
+				C820B7C81C67F266001AB98C /* ADNPostViewController.h */,
+				C820B7C61C67F258001AB98C /* ADNPostViewController.m */,
+				C820B7AE1C66C8A0001AB98C /* ADNPostTableViewController.h */,
+				C820B7AC1C66C889001AB98C /* ADNPostTableViewController.m */,
+				C820B7B61C66C9D6001AB98C /* Networking */,
+				C820B7BC1C66DE45001AB98C /* Models */,
+				C820B7B51C66C9C8001AB98C /* Views */,
 				C820B7821C66C7E3001AB98C /* Main.storyboard */,
 				C820B7851C66C7E3001AB98C /* Assets.xcassets */,
 				C820B7871C66C7E3001AB98C /* LaunchScreen.storyboard */,
@@ -145,6 +189,38 @@
 			path = AppDotNetReaderUITests;
 			sourceTree = "<group>";
 		};
+		C820B7B51C66C9C8001AB98C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C820B7B21C66C9A3001AB98C /* ADNPostTableViewCell.h */,
+				C820B7B31C66C9C0001AB98C /* ADNPostTableViewCell.m */,
+				C820B7B71C66C9EC001AB98C /* ADNPostTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C820B7B61C66C9D6001AB98C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C820B7AF1C66C978001AB98C /* ADNHTTPClient.h */,
+				C820B7B01C66C983001AB98C /* ADNHTTPClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		C820B7BC1C66DE45001AB98C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C820B7BF1C66DE68001AB98C /* ADNPost.h */,
+				C820B7BD1C66DE61001AB98C /* ADNPost.m */,
+				C820B7B91C66D717001AB98C /* ADNPostsStore.h */,
+				C820B7BA1C66D723001AB98C /* ADNPostsStore.m */,
+				C820B7C31C67CF96001AB98C /* ADNColors.h */,
+				C820B7C41C67CF9D001AB98C /* ADNColors.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C820B7A31C66C7E3001AB98C /* Build configuration list for PBXNativeTarget "AppDotNetReader" */;
 			buildPhases = (
+				DBF8898150F647BECA9D4C53 /* Check Pods Manifest.lock */,
 				C820B76F1C66C7E3001AB98C /* Sources */,
 				C820B7701C66C7E3001AB98C /* Frameworks */,
 				C820B7711C66C7E3001AB98C /* Resources */,
+				98FFA80817C798BC540FF020 /* Embed Pods Frameworks */,
+				B7FAA5AAC001575AFCBC15FB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +291,11 @@
 				TargetAttributes = {
 					C820B7721C66C7E3001AB98C = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C820B78E1C66C7E3001AB98C = {
 						CreatedOnToolsVersion = 7.2;
@@ -251,6 +335,7 @@
 				C820B7891C66C7E3001AB98C /* LaunchScreen.storyboard in Resources */,
 				C820B7861C66C7E3001AB98C /* Assets.xcassets in Resources */,
 				C820B7841C66C7E3001AB98C /* Main.storyboard in Resources */,
+				C820B7B81C66C9EC001AB98C /* ADNPostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +355,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		98FFA80817C798BC540FF020 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppDotNetReader/Pods-AppDotNetReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7FAA5AAC001575AFCBC15FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppDotNetReader/Pods-AppDotNetReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF8898150F647BECA9D4C53 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C820B76F1C66C7E3001AB98C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C820B7B11C66C983001AB98C /* ADNHTTPClient.m in Sources */,
+				C820B7B41C66C9C0001AB98C /* ADNPostTableViewCell.m in Sources */,
 				C820B77B1C66C7E3001AB98C /* AppDelegate.m in Sources */,
-				C820B77E1C66C7E3001AB98C /* MasterViewController.m in Sources */,
+				C820B7C51C67CF9D001AB98C /* ADNColors.m in Sources */,
+				C820B7C71C67F258001AB98C /* ADNPostViewController.m in Sources */,
 				C820B7781C66C7E3001AB98C /* main.m in Sources */,
-				C820B7811C66C7E3001AB98C /* DetailViewController.m in Sources */,
+				C820B7AD1C66C889001AB98C /* ADNPostTableViewController.m in Sources */,
+				C820B7BB1C66D723001AB98C /* ADNPostsStore.m in Sources */,
+				C820B7BE1C66DE61001AB98C /* ADNPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +555,7 @@
 		};
 		C820B7A41C66C7E3001AB98C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E89FB6AA22DACD6FCFCEBE4 /* Pods-AppDotNetReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppDotNetReader/Info.plist;
@@ -428,6 +567,7 @@
 		};
 		C820B7A51C66C7E3001AB98C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC80F6343674DBA25F6D722 /* Pods-AppDotNetReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppDotNetReader/Info.plist;
@@ -504,6 +644,7 @@
 				C820B7A51C66C7E3001AB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C820B7A61C66C7E3001AB98C /* Build configuration list for PBXNativeTarget "AppDotNetReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +653,7 @@
 				C820B7A81C66C7E3001AB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C820B7A91C66C7E3001AB98C /* Build configuration list for PBXNativeTarget "AppDotNetReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +662,7 @@
 				C820B7AB1C66C7E3001AB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
