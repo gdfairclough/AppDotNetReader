@@ -12,6 +12,10 @@
 @property (strong, nonatomic) UIActivityIndicatorView *spinner;
 
 - (IBAction)refresh:(UIRefreshControl *)sender;
+
+/**
+ method for initiating a background fetch in order to provide the app with fresh data on launch
+ */
 -(void)fetchNewDataWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completion;
 
 @end

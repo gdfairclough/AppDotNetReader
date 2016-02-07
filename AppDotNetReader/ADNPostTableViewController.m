@@ -98,8 +98,6 @@ void (^refreshData)(void);
     
     completion(UIBackgroundFetchResultNewData);
     
-    NSLog(@"fetched with interval"); 
-    
 }
 
 @end

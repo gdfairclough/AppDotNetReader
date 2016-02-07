@@ -16,10 +16,8 @@
 
 /**
  Add a post to the post array which will be read by the table view controller
- @param post A ADNPost object
+ @param post An ADNPost object to add to the store array
  */
 -(void)addPostToStore:(ADNPost *)post;
-
--(void)refreshPosts:(void (^)(void))reload;
 
 @end
